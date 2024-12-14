@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smartcare - Exames</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="app-header">
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+        <h1>Exames</h1>
+    </header>
+    <nav id="menu" class="side-menu">
+        <a href="index.html" onclick="closeMenu()">Perfil</a>
+        <a href="exames.html" onclick="closeMenu()">Exames</a>
+        <a href="consultations.html" onclick="closeMenu()">Consultas</a>
+        <a href="medications.html" onclick="closeMenu()">Medicamentos</a>
+    </nav>
+    <main class="content">
+        <section class="card">
+            <h2>Análise de Exame de Sangue (Hemograma Completo)</h2>
+            <p><strong>O que é medido:</strong></p>
+            <p>O hemograma completo é um exame de sangue que mede diversos aspectos dos componentes do sangue, incluindo:</p>
+            <ul>
+                <li><strong>Hemoglobina:</strong> A hemoglobina é uma proteína encontrada nas células vermelhas do sangue e é responsável por transportar oxigênio dos pulmões para o resto do corpo.</li>
+                <li><strong>Glóbulos Brancos:</strong> São as células responsáveis pela defesa do corpo contra infecções. A contagem de glóbulos brancos ajuda a identificar possíveis infecções ou condições inflamatórias.</li>
+                <li><strong>Plaquetas:</strong> As plaquetas são células que ajudam na coagulação do sangue. Uma contagem baixa pode indicar dificuldades de coagulação, enquanto uma contagem alta pode aumentar o risco de trombose.</li>
+            </ul>
+            <p><strong>Imagem do Exame:</strong></p>
+            <img src="https://media.discordapp.net/attachments/855474414543699968/1317327595997626439/file-6xMdboufGJLHRebdC1vBt3.png?ex=675e486d&is=675cf6ed&hm=617b343dbbbe6efb006000de92000ddaa1dec5888f639ca12e9a98e20c5a655b&=&format=webp&quality=lossless&width=1121&height=668" alt="Imagem do Exame de Sangue" style="max-width: 100%; height: auto; margin-top: 10px;">
+        </section>
+
+        <section class="card">
+            <h2>Análise de Exame de Glicemia (Glicemia em Jejum)</h2>
+            <p><strong>O que é medido:</strong></p>
+            <p>O exame de glicemia em jejum mede a quantidade de glicose no sangue após um período de jejum de pelo menos 8 horas. A glicose é a principal fonte de energia do corpo e é regulada pelo hormônio insulina.</p>
+            <ul>
+                <li><strong>Glicemia em Jejum:</strong> Níveis elevados de glicose em jejum podem indicar problemas com o controle do açúcar no sangue, como no caso do diabetes.</li>
+            </ul>
+            <p><strong>Imagem do Exame:</strong></p>
+            <img src="https://media.discordapp.net/attachments/855474414543699968/1317334972419538954/file-SGDAitpJNeAN9vUk9f93ks.png?ex=675e4f4c&is=675cfdcc&hm=32dffdf286758497b407fe4cd69247a21b19dbf9b83211b6800c39f51589252f&=&format=webp&quality=lossless&width=1121&height=668" alt="Imagem do Exame de Glicemia" style="max-width: 100%; height: auto; margin-top: 10px;">
+        </section>
+    </main>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        }
+
+        function closeMenu() {
+            document.getElementById('menu').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

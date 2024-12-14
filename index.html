@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smartcare - Perfil</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="app-header">
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+        <h1>Perfil</h1>
+    </header>
+    <nav id="menu" class="side-menu">
+        <a href="index.html" onclick="closeMenu()">Perfil</a>
+        <a href="exames.html" onclick="closeMenu()">Exames</a>
+        <a href="consultations.html" onclick="closeMenu()">Consultas</a>
+        <a href="medications.html" onclick="closeMenu()">Medicamentos</a>
+    </nav>
+    <main class="content">
+        <section class="card">
+            <!-- Contêiner principal ajustado -->
+            <div style="display: flex; flex-direction: column; align-items: flex-start;">
+                <!-- Foto de perfil -->
+                <div class="profile-placeholder">
+                    <img src="https://i.pinimg.com/236x/a8/da/22/a8da222be70a71e7858bf752065d5cc3.jpg" alt="Foto do Paciente" class="profile-image">
+                </div>
+                <!-- Informações -->
+                <div style="margin-top: 20px;">
+                    <h2>João da Silva</h2>
+                    <p><strong>Email:</strong> joao.silva@email.com</p>
+                    <p><strong>Idade:</strong> 35 anos</p>
+                    <p><strong>Tipo Sanguíneo:</strong> O+</p>
+                    <p><strong>Peso:</strong> 72 kg</p>
+                    <p><strong>Altura:</strong> 1.75 m</p>
+                    <p><strong>Histórico de Alergias:</strong> Nenhuma</p>
+                </div>
+                <!-- Botões -->
+                <div class="button-group">
+                    <button class="menu-btn" onclick="location.href='exames.html'">Ver Exames</button>
+                    <button class="menu-btn" onclick="location.href='consultations.html'">Ver Consultas</button>
+                    <button class="menu-btn" onclick="location.href='medications.html'">Ver Medicamentos</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        }
+
+        function closeMenu() {
+            document.getElementById('menu').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
